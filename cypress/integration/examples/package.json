@@ -5,8 +5,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
+"cypress-cucumber-preprocessor": 
+{
+
+  "json": {
+    "enabled": true,
+    "output": "cypress/cucumberReports/results.json"
+  }
+
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
-}
+  "description": "",
+  
+    "dependencies": {
+      "@badeball/cypress-cucumber-preprocessor": "latest",
+      "@cypress/browserify-preprocessor": "latest"
+      
+    }
+  }
+

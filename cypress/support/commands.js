@@ -19,6 +19,19 @@ Cypress.Commands.add("selectProduct",(productName)=> {
 })
 })
 
+Cypress.Commands.add("LoginAPI",()=>
+
+{
+    cy.request("POST","https://rahulshettyacademy.com/client/auth/login",
+    {userEmail: "nishita.poria@gmail.com", userPassword: "Nishita@123"}).
+    then(function(response)
+    {
+        expect(response.status).to.eq(200)
+            Cypress.env('token',response.body.token);
+    })
+
+})
+
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
