@@ -1,7 +1,8 @@
 console.log("Hello World")
 
 //var a=4
-
+//git is a tool that is use to track the code 
+//github is webside that manages the code and make changes in code
 
 let a=4
 console.log(a)
