@@ -8,7 +8,7 @@ module.exports=class Person
     //properties when you see the "get"
     get location()
     {
-        return "canada"
+        return "Canada"
     }
 
 
